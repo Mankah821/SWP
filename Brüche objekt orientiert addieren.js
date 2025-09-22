@@ -1,3 +1,5 @@
+const process = require('node:process');
+
 
 
 class Bruch {
@@ -76,7 +78,7 @@ class Bruch {
 
 
 // Beispiel
-const b1 = Bruch.parse("3 3/4");
-const b2 = Bruch.parse("1 1/2");
+const b1 = Bruch.parse(process.argv[2]);
+const b2 = Bruch.parse(process.argv[3]);
 const summe = b1.addiere(b2);
 console.log(`${b1.toString()} + ${b2.toString()} = ${summe.toString()}`);

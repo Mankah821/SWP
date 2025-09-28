@@ -5,11 +5,16 @@ const process = require('node:process');
 class Bruch {
     constructor(zaehler, nenner) 
     {
-        if (nenner === 0) throw new Error("Nenner darf nicht 0 sein!");
+        if (nenner === 0)
+        {
+            throw new Error("Nenner darf nicht 0 sein!");
+        }
+        
         this.zaehler = zaehler;
         this.nenner = nenner;
         this.kuerzen();
     }
+    
 
     // Addiert einen anderen Bruch und gibt einen neuen Bruch zurück
     addiere(andere) 
@@ -67,7 +72,7 @@ class Bruch {
     if(nenner==0 || isNaN(Number(ganz)) || isNaN(Number(zaehler)) || isNaN(Number(nenner)))
     {
 
-        throw ("Diese Eingabe ist leider nicht gültig");
+        throw new Error("Diese Eingabe ist leider nicht gültig");
 
     }
 
@@ -76,9 +81,14 @@ class Bruch {
 }
 
 
-
 // Beispiel
-const b1 = Bruch.parse(process.argv[2]);
-const b2 = Bruch.parse(process.argv[3]);
+let b1, b2;
+try {
+  b1 = Bruch.parse(process.argv[2]);
+  b2 = Bruch.parse(process.argv[3]);
+} catch (e) {
+  console.error(e instanceof Error ? e.message : String(e));
+  process.exit(1); // nicht weiterrechnen
+}
 const summe = b1.addiere(b2);
 console.log(`${b1.toString()} + ${b2.toString()} = ${summe.toString()}`);

@@ -8,5 +8,5 @@ export function isPrime(num: number): boolean {
   }
   return true;
 }
-console.log(isPrime(11)); // true
+console.log(isPrime(i)); // true
 console.log(isPrime(15)); // false  

@@ -1,3 +1,4 @@
+
 export function isPrime(num: number): boolean {
   if (num < 2) return false; 
   let i;
@@ -8,5 +9,5 @@ export function isPrime(num: number): boolean {
   }
   return true;
 }
-console.log(isPrime(i)); // true
+console.log(isPrime(13)); // true
 console.log(isPrime(15)); // false  

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <h3>table Element</h3>
+        <p>Das Table element gehört zum flow content</p>
+        <p>Es wird benutzt um tabellen zu erstellen. Es hat die globalen Attribute, da die anderen veraltet sind</p>
+    </section>
+    <section>
+        <h3>Tr Element</h3>
+        <p>Das Tr element gehört zum flow content</p>
+        <p>Es wird benutzt um eine Tabellenzeile zu erstellen. Es hat die globalen Attribute,da die anderen veraltet
+            sind</p>
+    </section>
+    <section>
+        <h3>Th Element</h3>
+        <p>Das Th element gehört zum flow content/table content</p>
+        <p>Es wird benutzt um eine Tabellenüberschrift zu erstellen. Es hat mehrere Attribute</p>
+        <p>Beispiele:</p>
+        <ul>
+
+            <li>scope = legt den Geltungsbereich der Überschrift fest (row, col, rowgroup, colgroup)</li>
+            <li>colspan = gibt an, über wie viele Spalten die Überschrift erstreckt</li>
+            <li>rowspan = gibt an, über wie viele Zeilen die Überschrift erstreckt</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Td Element</h3>
+        <p>Das Td element gehört zum flow content/table content</p>
+        <p>Es wird benutzt um eine Tabellenzelle zu erstellen. Es hat mehrere Attribute</p>
+        <p>Beispiele:</p>
+        <ul>
+
+            <li>colspan = gibt an, über wie viele Spalten die Zelle erstreckt</li>
+            <li>rowspan = gibt an, über wie viele Zeilen die Zelle erstreckt</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Beispiel für eine Tabelle</h2>
+
+        <table>
+            <tr>
+                <th>Überschrift 1</th>
+                <th>Überschrift 2</th>
+            </tr>
+            <tr>
+                <td>Zelle 1</td>
+                <td>Zelle 2</td>
+            </tr>
+            <tr>
+                <td>Zelle 3</td>
+                <td>Zelle 4</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h3>img Element</h3>
+        <p>Das Img element gehört zum flow content,phrasing content und embedded content</p>
+        <p>Es wird benutzt um Bilder in eine HTML Seite einzufügen. Es hat mehrere Attribute</p>
+        <p>Beispiele:</p>
+        <ul>
+
+            <li>src = Pfad zum Bild</li>
+            <li>alt = beschreibung des Bildes</li>
+            <li>width/height= legt die Breite und Höhe des Bildes in pixel fest</li>
+            <li>title = zusätzlicher Informationstext, der angezeigt wird</li>
+            <li>loading = legt fest, ob das Bild sofort oder erst beim Scrollen geladen wird (lazy/eager)</li>
+            <li>crossorigin = CORS-Handling für externe Bilder</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Beispiel für ein Bild</h2>
+        <img src="https://www.wall-art.de/out/pictures/generated/product/3/1080_1080_80/wandtattoo-hallo-schriftzug-einzel-03.jpg"
+            alt="Beispielbild" width="300" height="200" title="Dies ist ein Beispielbild">
+    </section>
+    <section>
+        <h3> Details&Summary Tag</h3>
+        <p> Das Details element gehöhrt zum interactive content. Es wird zusammen mit dem summary element verwenden um
+            einen Bereich zu erstellen, der ein- und ausgeklappt werden kann.</p>
+        <p> Es hat folgende Attribute:</p>
+        <ul>
+            <li>open= Zeigt an das das detail element beim laden geöffnet ist.</li>
+            <li>globale attribute</li>
+        </ul>
+            <p>Summary Attribute:</p>
+        <ul>
+            <li>globale attribute</li>
+        </ul>
+    </section>
+     <section>
+        <h2>Beispiel für ein Detail&Summary</h2>
+    
+        <details>
+        <summary>Klicken Sie hier für mehr Informationen</summary>
+        <p>Dies sind die verborgenen Informationen, die nach dem Klicken erscheinen.</p>
+        </details>
+
+        <p>Mit open</p>
+        <details open>
+        <summary>Mehr Details</summary>
+        <p>Diese Informationen sind sofort sichtbar, da `open` gesetzt wurde.</p>
+        </details>
+    </section>
+    <section>
+        <h3>Form/Input</h3>
+        <p>Das form-Element ist ein Container, der Eingabefelder, Buttons usw. enthält und Daten an einen Server sendet</p>
+        <p>Das input-Element erstellt ein einzelnes Eingabefeld (z. B. Text, Zahl, Passwort, Checkbox usw.).</p>
+        <p>Attribute für form:</p>
+        <ul>
+        
+            <li>action=Ziel-URL, an die die Formulardaten gesendet werden.</li>
+            <li>method=Bestimmt, wie Daten gesendet werden: get oder post.</li>
+            <li>enctype=Gibt das Datenformat beim Senden an (z. B. für Datei-Uploads).</li>
+            <li>target=Wo die Antwort angezeigt wird (_self, _blank, _parent, _top).</li>
+            <li>autocomplete=Schaltet Autovervollständigung ein oder aus (on / off).</li>
+            <li>novalidate=Deaktiviert die Browser-Überprüfung der Eingaben.</li>
+            <li>Globale Attribute</li>
+        </ul>
+        <p>Attribute für input:</p>
+        <ul>
+        
+            <li>type=Ohne dem weiß der Browser nicht, welche Art von Feld du willst (Text, Passwort, E-Mail, Zahl …).</li>
+            <li>name=Wird gebraucht, damit beim Absenden ein Wert gespeichert oder gesendet wird.</li>
+            <li>value=Gibt den aktuellen oder voreingestellten Wert an. Wichtig bei Buttons oder Voreinstellungen.</li>
+            <li>placeholder=Zeigt Hilfetext an, wenn das Feld leer ist (nützlich für Benutzerfreundlichkeit).</li>
+            <li>required=Macht das Feld Pflicht, Benutzer können das Formular nicht abschicken, wenn es leer ist.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Beispiel für ein form/input</h2>
+    
+
+    <form action="#" method="post">
+    <label for="name">Dein Name:</label><br>
+    <input type="text" id="name" name="username" placeholder="Name eingeben" required>
+    <br><br>
+
+    <label for="email">Deine E-Mail:</label><br>
+    <input type="email" id="email" name="useremail" placeholder="E-Mail eingeben">
+    <br><br>
+
+    <input type="submit" value="Absenden">
+  </form>
+    </section>
+     <section>
+                <h3>Ol element</h3>
+                <p>Das Ol element gehört auch zum Flow Content</p>
+                <p>Es wird benutzt um eine geordnete Liste zu erstellen. Die einzelnen Punkte der Liste werden auch mit dem Li element erstellt.</p>
+                <p>Anders als beim ul ist die Reihenfolge der Punkte hier wichtig. Um die punkte zu nummerieren braucht man folgende Attribute</p>
+                <p>Beispiele:</p>
+                <ul>
+                    
+                    <li>type       = gibt den typ der nummerierung an(zbs. Zahlen, Buchstaben)</li>
+                    <li>start      = legt die start nummer der liste fest</li>
+                    <li>reversed   = die liste wird in umgekehrter Reihenfolge angezeigt</li>
+                    <li>class/id/style= Standard-HTML-Attribute → für CSS oder JS</li>
+                </ul>
+            </section>
+            <section>
+            <h3>Li Element</h3>
+            <p>Das Li element gehört auch zum Flow Content</p>
+            <p>Es wird benutzt um ein Eintrag in einer Liste (geordneten oder ungeordneten Liste) zu ermöglichen.</p>
+            <p>Es gibt 2 Attribute.</p>
+            <ul>
+                <li>value      = legt den Wert des Listeneintrags fest (nur bei ol element)</li>
+                <li>class/id/style= Standard-HTML-Attribute → für CSS oder JS</li>
+            </ul>
+            </section>
+            <section>
+        <h2>Beispiel für eine ol liste</h2>
+
+        <ol>
+        <li>Apfel</li>
+        <li>Banane</li>
+        <li>Kirsche</li>
+        <li>Traube</li>
+        </ol>
+    </section>
+
+
+
+</body>
+
+</html>

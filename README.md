@@ -1,19 +1,23 @@
 # SWP
-zum abgeben der Übungen
-hallo
+
+zum abgeben der Übungen hallo
 
 Erklärung der Begriffe:
 
-throw= Offizieller Code wird unterbrochen.throw ist eine Benutzerdefinierte Fehlermeldung. Kann mit einem catch-block aufgenommen werden   
-       und kontrolliert behandelt werden.(mit throw stürzt ein programm nicht gleich bei Fehlern ab)
+throw= Offizieller Code wird unterbrochen.throw ist eine Benutzerdefinierte
+Fehlermeldung. Kann mit einem catch-block aufgenommen werden\
+und kontrolliert behandelt werden.(mit throw stürzt ein programm nicht gleich
+bei Fehlern ab)
 
-try= try definiert einen Code-Block. Überprüft ob Fehler im code drinnnen sind. Wenn ja wird der Fehler zum catch block weitergeleitet.
-     Das heist das Programm  stürzt nicht ab stattdessen wird ein Fehler bekannt gegeben.
+try= try definiert einen Code-Block. Überprüft ob Fehler im code drinnnen sind.
+Wenn ja wird der Fehler zum catch block weitergeleitet. Das heist das Programm
+stürzt nicht ab stattdessen wird ein Fehler bekannt gegeben.
 
-catch= Falls der try Block ein Fehler beinhaltet wird dies zum catch block gegeben und dort sorgfältig verarbeitet. Entweder wird eine    
-       andere Logik benützt oder eine Fehlermeldung wird ausgeführt.
+catch= Falls der try Block ein Fehler beinhaltet wird dies zum catch block
+gegeben und dort sorgfältig verarbeitet. Entweder wird eine\
+andere Logik benützt oder eine Fehlermeldung wird ausgeführt.
 
+leeren ordner deno init deno test schaue was passiert und anwenden dann weis ich
+wie ich das alles teste bruch to string bei bruch 1 bruch 2
 
-leeren ordner deno init
-deno test schaue was passiert und anwenden dann weis ich wie ich das alles teste
-bruch to string bei bruch 1 bruch 2
+details&summary noch bei html tags anwenden!

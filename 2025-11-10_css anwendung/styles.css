@@ -14,7 +14,7 @@ body {
   background-color: #85f8ca;
   border: 4px solid #010139;
   padding:50px;
-  margin: 40px;
+  /*margin: 40px;*/
   box-shadow: 10px 10px 5px #8b8a8a;
   border-radius: 25px;
    box-sizing: border-box;
@@ -34,7 +34,7 @@ body {
 
 
 .box2 {
-  margin: 40px;
+  /*margin: 40px;*/
   width: 200px;
   height: 100px;
   background: rgba(5, 53, 227, 0.515);
@@ -76,11 +76,13 @@ body {
 }
 
 .container {
+  flex-direction: column;
   display: flex;            
   align-items: flex-start;  
   justify-content: center;  
   gap: 20px;    
-  margin-left: -800px;            
+  /*margin-left: -800px; */    
+  flex-wrap: wrap;      
 }
 
 .boxes {

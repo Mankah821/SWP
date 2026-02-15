@@ -1,0 +1,33 @@
+body {
+    place-items: center;
+}
+input {
+ display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #5fa0d8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+thead {
+    background-color: #5fa0d8;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

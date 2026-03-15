@@ -1,4 +1,4 @@
-async function holeEssen() {
+async function _holeEssen() {
   const response = await fetch("/essen");
   const daten = await response.json();
 
